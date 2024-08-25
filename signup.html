@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="tr" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, max-scale=1.0, user-scalable=no"
+    />
+    <link type="/image/png" rel="icon" href="/images/global-protection.png" />
+    <meta name="robots" content="index, follow, noarchive" />
+    <meta name="revisit-after" content="7 Days" />
+    <meta name="rating" content="general" />
+    <meta name="copyright" content="Copyright &copy;2024- ..." />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <title>HepsiÇurada</title>
+    <link type="text/css" rel="stylesheet" href="styles/loginstyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="parent-container">
+        <div class="backbutton">
+          <button>
+            <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+          </button>
+        </div>
+      </div>
+      <div class="logcontainer">
+        <div class="logelement passive">
+          <a href="login.html">Giriş Yap</a>
+        </div>
+        <div class="logelement active">
+          <a href="">Kayıt Ol</a>
+        </div>
+      </div>
+      <div class="signform-1">
+        <input type="text" id="isim" name="isim" placeholder="İsminiz" />
+        <input
+          type="text"
+          name="soyisim"
+          id="soyisim"
+          placeholder="Soyisminiz"
+        />
+      </div>
+      <div class="signform-2">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="E-Posta Adresiniz"
+        />
+      </div>
+      <div class="signform-1">
+        <div class="countryCode">
+          <input
+            type="countryCode"
+            name="countryCode"
+            id="countryCode"
+            placeholder="Ülke Kodu"
+            maxlength="4"
+          />
+        </div>
+        <div class="telCode">
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            maxlength="10"
+            placeholder="Telefon Numaranız"
+          />
+        </div>
+      </div>
+      <div class="signform-2">
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Şifreniz"
+        />
+      </div>
+      <div class="password-strength" id="password-strength"></div>
+      <div class="requirements" id="requirements">
+        <span id="least6span">
+          <i class="fa-solid fa-check"></i> En az 6 karakter
+        </span>
+        <span id="least1span">
+          <i class="fa-solid fa-check"></i> En az 1 büyük harf
+        </span>
+        <span id="least1numberspan">
+          <i class="fa-solid fa-check"></i> En az 1 rakam
+        </span>
+        <span id="least1specialspan">
+          <i class="fa-solid fa-check"></i> En az 1 Özel karakter
+        </span>
+      </div>
+      <div class="logform-group">
+        <button type="submit" value="Submit" class="btn-primary">
+          <a href="">Kayıt Ol</a>
+        </button>
+      </div>
+      <div class="forg2"><a href=""> Hesabın var mı?</a></div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/6e93499a73.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/signup.js"></script>
+  </body>
+</html>

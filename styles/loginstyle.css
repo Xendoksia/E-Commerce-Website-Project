@@ -1,0 +1,638 @@
+
+html, body {
+  
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.5;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(90deg, #2E3192, #1BFFFF);
+}
+
+
+
+@media only screen and (min-width: 1200px) { /*XL DEVICES */
+  body {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 574px) { /*XS DEVICES */
+  body {
+    font-size: 12px;
+  }
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+  margin: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main {
+  width: 100%;
+  flex: 1;
+}
+
+header {
+  width: 100%;
+  top: 0;
+  margin: 0;
+  padding: 00;
+}
+
+
+.container {
+  border-radius: 10px;
+  width: 22%;
+  height: 60%;
+  background-color: rgba(77, 7, 83, 0.3);
+  margin-top: 150px;
+  justify-content: flex-start;
+  border:10px solid white;
+  border-image: linear-gradient(90deg,#1BFFFF , #2E3192) 1;
+  backdrop-filter: blur(5px);
+
+}
+
+.parent-container {
+  display: flex;
+  justify-content: flex-start; /* Align children to the start (left) */
+}
+
+.backbutton {
+  width: 10%;
+  height: 50px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  left: 0;
+  text-align: left; 
+  display: block; 
+}
+
+
+.backbutton button {
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  text-align: left; 
+  display: block; 
+  
+}
+
+.fa-arrow-left {
+  color: rgb(125, 9, 221);
+  font-size: 50px;
+
+}
+.logcontainer {
+  width: 80%;
+  height: 10%;
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  margin-right: auto;
+  background-color: rgb(117, 85, 214);
+  margin-left: auto;
+  border-radius: 50px;
+  font-family: "PT Sans", sans-serif;
+
+}
+
+.logelement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  font-family: "PT Sans", sans-serif;
+  color: #6b6b6b;
+  text-align: center;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -.09px;
+  background-color:#5d3ebc;
+  box-sizing: border-box;
+}
+
+.active {
+  background-color:#522dc4;
+  font-size:24px;
+  border-radius: 50px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.passive {
+  background-color:#7555d6;
+  font-size:18px;
+  border-radius: 50px;
+}
+
+.loginform {
+  width: 100%;
+  height:40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  gap: 28px;
+}
+.loginform input {
+  width: 350px;
+  height: 20px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  font-family: pt sans;
+  outline: 2px solid #522dc4;
+  
+}
+
+input:focus::placeholder {
+  color: #522dc4;
+}
+
+.loginform .rememberbtn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center; /* Center items vertically */
+  margin-top: -5px;
+}
+
+.rememberbtn input {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-right: 0; 
+  margin-left: auto; 
+  outline: none;
+}
+
+.rememberbtn label {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: pt sans;
+  margin-right: 10px; /* Add some space between label and input */
+}
+.btn-primary{
+  width: 350px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #522dc4;
+  color: white;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  outline: none;
+  letter-spacing: -.09px;
+  font-weight: 700;
+  font-size: 20px;
+
+}
+
+
+.forg {
+  display: flex;
+  width: 100%;
+  margin-left: 80px;
+}
+
+@media only screen and (min-width: 1200px) { /*XL DEVICES */
+  .container {
+    width: 22%;
+    height: 60%;
+  }
+  .backbutton {
+    width: 10%;
+    height: 50px;
+  }
+  .fa-arrow-left {
+  color: rgb(125, 9, 221);
+  font-size: 50px;
+  }
+  .logelement{
+    
+    font-size:25px;
+  }
+  .loginform input {
+    width: 240px;
+    height: 20px;
+  }
+  .btn-primary{
+    width: 300px;
+    height: 50px;
+  }
+  
+
+}
+
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 35%;
+    height: 64%;
+  }
+  .backbutton {
+    width: 10%;
+    height: 48px;
+  }
+  .fa-arrow-left {
+    color: rgb(125, 9, 221);
+    font-size: 46px;
+  }
+  .logelement{
+    
+    font-size:20px;
+  }
+  .loginform input {
+    width: 250px;
+    height: 19px;
+  }
+  .btn-primary{
+    width: 300px;
+    height: 47px;
+  }
+  
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 45%;
+    height: 65%;
+  }
+  .backbutton {
+    width: 10%;
+    height: 45px;
+  }
+  .fa-arrow-left {
+    color: rgb(125, 9, 221);
+    font-size: 44px;
+  }
+  .logelement{
+    
+    font-size:17px;
+  }
+  .loginform input {
+    width: 290px;
+    height: 20px;
+  }
+  .btn-primary{
+    width: 270px;
+    height: 47px;
+  }
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .container {
+    width: 55%;
+    height: 66%;
+  }
+  .backbutton button{
+    width: 10%;
+    height: 43px;
+  }
+  .fa-arrow-left {
+    color: rgb(125, 9, 221);
+    font-size: 42px;
+  }
+
+  .logelement{
+    
+    font-size:15px;
+  }
+  .loginform input {
+    width: 270px;
+    height: 20px;
+  }
+  .btn-primary{
+    width: 250px;
+    height: 47px;
+  }
+
+}
+
+
+@media only screen and (max-width: 574px) { /*XS DEVICES */
+  .container {
+    width: 80%;
+    height: 60%;
+  }
+  .backbutton {
+    width: 10%;
+    height: 37px;
+  }
+  .fa-arrow-left {
+    color: rgb(125, 9, 221);
+    font-size: 35px;
+  }
+
+  .logelement{
+    
+    font: size 14px;
+  }
+  .loginform input {
+    width: 270px;
+    height: 20px;
+  }
+  .btn-primary{
+    width: 220px;
+    height: 47px;
+  }
+
+}
+
+.signform-1 {
+  margin-top: 20px;
+  padding: 0;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.signform-1 input {
+  width: 150px;
+  height: 20px;
+  border-radius: 10px;
+  outline: 2px solid #522dc4;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "PT Sans", sans-serif;
+  border: none;
+}
+
+.signform-2 input {
+
+  width: 350px;
+  height: 20px;
+  border-radius: 10px;
+  outline: 2px solid #522dc4;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "PT Sans", sans-serif;
+  border: none;
+  margin-top: 20px;
+}
+
+.signform-3 input {
+  width: 250px;
+  height: 20px;
+  border-radius: 10px;
+  outline: 2px solid #522dc4;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "PT Sans", sans-serif;
+  border: none;
+  margin-top: 10px;
+}
+.telCode {
+  margin-left: 0;
+  width: 100%;
+}
+
+.telCode input {
+  
+  width: 220px;
+  margin-right: 100px;
+}
+
+.countryCode input{
+  width: 80px;
+  margin-left: 100px;
+}
+
+.requirements {
+  display: none;
+  width: 100%;
+  justify-content: center;
+  justify-items: center;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.requirements span {
+  margin: 0 5px;
+  color: red;
+  font-weight: 800;
+  
+}
+
+.password-strength {
+  font-weight: 600;
+  color: white;
+  margin: 0 auto;
+  height: 15px;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  justify-items: center;
+  font-size: 10px;
+  margin-top: 10px;
+  border-radius: 50px;
+}
+.forg2 {
+  width: 70%;
+  display: flex;
+  
+  justify-content: flex-start;
+  margin-top: 1rem;
+  margin-left: 4rem;
+}
+
+
+@media only screen and (min-width: 1200px) { /*XL DEVICES */
+ .container{
+  width: 27%;
+  height: 60%;
+ }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .container{
+    width: 40%;
+    height: 60%;
+    margin-top: 100px;
+   }
+   .signform-1 #isim{
+    width: 35%;
+    height: 20%;
+    gap: 28px;
+  }
+  .signform-1 #soyisim{
+    width: 40%;
+    height: 20%;
+    gap: 28px;
+  }
+  .signform-2 #email {
+
+    width: 85%;
+    height: 20px;
+    
+  }
+  .signform-1 #tel {
+  
+    width: 220px;
+    margin-right: 100px;
+  }
+  
+  .signform-1 #countryCode{
+    width: 80px;
+    margin-left: 100px;
+  }
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container{
+    width: 50%;
+    height: 70%;
+    margin-top: 80px;
+   }
+   .signform-1 #isim{
+    width: 35%;
+    height: 30%;
+    gap: 28px;
+  }
+  .signform-1 #soyisim{
+    width: 40%;
+    height: 30%;
+    gap: 28px;
+  }
+  .signform-2 #email {
+    width: 85%;
+    height: 20px;
+  }
+  .telCode input {
+  
+    width: 220px;
+    margin-right: 100px;
+  }
+  
+  .countryCode input{
+    width: 80px;
+    margin-left: 100px;
+  }
+  
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .container{
+    width: 60%;
+    height: 75%;
+    margin-top: 60px;
+   }
+   .signform-1 #isim{
+    width: 35%;
+    height: 30%;
+    gap: 28px;
+  }
+  .signform-1 #soyisim{
+    width: 40%;
+    height: 30%;
+    gap: 28px;
+  }
+  .signform-2 #email {
+    width: 87%;
+    height: 20%;
+    gap: 28px;
+  }
+  .telCode input {
+  
+    width: 220px;
+    margin-right: 100px;
+  }
+  
+  .countryCode input{
+    width: 80px;
+    margin-left: 100px;
+  }
+  
+}
+
+@media only screen and (max-width: 574px) { /*XS DEVICES */
+  .container{
+    width: 70%;
+    height: 80%;
+    margin-top: 60px;
+   }
+   .signform-1 #isim{
+    width: 35%;
+    height: 30%;
+    gap: 28px;
+  }
+  .signform-1 #soyisim{
+    width: 40%;
+    height: 30%;
+    gap: 28px;
+  }
+  .signform-2 #email {
+    width: 87%;
+    height: 20%;
+    gap: 28px;
+  }
+  .telCode input {
+  
+    width: 150px;
+    margin-right: 100px;
+  }
+  
+  .countryCode input{
+    width: 80px;
+    margin-left: 100px;
+  }
+  .signform-2 #password {
+    width: 87%;
+    height: 20%;  
+  }
+
+}
