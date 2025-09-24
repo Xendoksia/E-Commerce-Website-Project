@@ -1,4 +1,4 @@
-# E-Commerce Website Project
+#  PURE JS,CSS,HTML E-Commerce Website Project
 
 A full-stack e-commerce web application built with modern web technologies, featuring a responsive design, 
 
